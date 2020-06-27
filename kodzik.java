@@ -1,4 +1,6 @@
-class Ksiazka {
+//Maciej Ryba
+class Ksiazka 
+{
 private String tytul;
 private String autor;
 private String wydawnictwo;
@@ -12,36 +14,45 @@ this.wydawnictwo = wydawnictwo;
 this.rokWydania = rokWydania;
 this.cena = cena;
 }
-public Ksiazka() {
+public Ksiazka() 
+{
 }
-public void wczytajTytul(String tytul) {
+public void wczytajTytul(String tytul)
+{
 this.tytul = tytul;
 }
-public void wczytajAutora(String autor) {
+public void wczytajAutora(String autor) 
+{
 this.autor = autor;
 }
-public void wczytajRokWydania(int rok) {
+public void wczytajRokWydania(int rok) 
+{
 this.rokWydania = rok;
 }
-public String wypiszTytul() {
+public String wypiszTytul() 
+{
 return tytul;
 }
-public String wypiszAutora() {
+public String wypiszAutora() 
+{
 return autor;
 }
-public int wypiszRokWydania() {
+public int wypiszRokWydania() 
+{
 return rokWydania;
 }
 @Override
-public String toString() {
+public String toString() 
+{
 return "Ksiazka [tytul=" + tytul + ", autor=" + autor + ", wydawnictwo=" + wydawnictwo +
 ", rokWydania="
 + rokWydania + ", cena=" + cena + "]";
 }
 }
 public class Main {
-public static void main(String[] args) {
-Ksiazka k1 = new Ksiazka("W pustyni i w paszczy", "Henryk Sienkiewicz", "PWN", 1992, 9);
+public static void main(String[] args) 
+{
+Ksiazka k1 = new Ksiazka("W pustyni i w puszczy", "Henryk Sienkiewicz", "PWN", 1992, 9);
 Scanner input = new Scanner(System.in);
 System.out.println("Podaj tytul: ");
 String tytul = input.nextLine();
@@ -62,3 +73,4 @@ System.out.println(k1);
 System.out.println(k2);
 }
 }
+//Maciej Ryba
